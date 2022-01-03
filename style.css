@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.maateen.me/adorsho-lipi/font.css');
 body{
-    height: 100vh;
+    height: 300vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: rgb(29,31,32);
-    overflow: hidden;
 }
 header{
     display: flex;
