@@ -1,0 +1,16 @@
+@media(max-width:828px) {
+    nav{
+        width: 564px;
+    }
+}
+@media(max-width:768px) {
+    nav ul{
+        display: none;
+    }
+    nav{
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
