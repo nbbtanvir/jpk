@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.maateen.me/adorsho-lipi/font.css');
 body{
-    height: 300vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    scroll-behavior: smooth;
     /* background-color: rgb(29,31,32); */
 }
 header{
@@ -94,7 +93,6 @@ background-color:rgba(0, 0, 0,.1);
 }
 .amraJaJaSikhabo{
     display: flex;
-   
     align-items: center;
     justify-content: center;
 }
@@ -109,12 +107,12 @@ background-color:rgba(0, 0, 0,.1);
     
 }
 .grid div{
-   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
+    overflow: hidden;
 }
 .grid div img{
     height: 100px;
@@ -123,6 +121,37 @@ background-color:rgba(0, 0, 0,.1);
     border-radius: 50%;
     margin-top: 1rem;
 }
+.grid div a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+    transition: all ease .3s 0s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.grid div a::before{
+    content: "";
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: -4rem;
+    transform: translateY(-50%);
+  
+    transition:  ease .5s 0s;
+    z-index: 1;
+}
+.grid div a:hover::before{
+    background-color: rgba(255, 0, 0, 0.137);
+    height:20rem;
+    width: 20rem;
+}
 .txt{
     font-size: 1.5rem;
     grid-column-start: 1;
@@ -130,6 +159,13 @@ background-color:rgba(0, 0, 0,.1);
     background-color: rgba(255, 0, 0, 0.226);
     color: red;
 }
-.typing,.drowing,.editing,.creating{
+.typing,.drowing,.editing,.creating,.office,.webdev{
     background-color: rgb(245, 245, 245);
+}
+.kotha{
+    font-family: 'AdorshoLipi',sans-serif;
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
 }
