@@ -6,6 +6,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: rgb(29,31,32);
+    overflow: hidden;
 }
 header{
     display: flex;
@@ -20,6 +21,7 @@ nav{
     justify-content: space-between;
     box-shadow: .1px .1px 5px black;
     border-radius: 0rem 0rem 1rem 1rem;
+    position: relative;
 }
 .logo{
     font-size: 1.5rem;
@@ -56,7 +58,8 @@ ul li a:hover{
     border-radius: 1.5rem;
 }
 .mobileMenu{
-    display: flex;
+    position: relative;
+    display: none;
     flex-direction: column;
     /* background-color: white; */
     align-items: CENTER;
@@ -71,6 +74,7 @@ ul li a:hover{
     border-radius: 50%;
 }
 .mobileMenu:hover{
-background-color:rgb(32,33,34);
+background-color:rgb(35,36,37);
 }
+
 /*wish to work properly*/

@@ -1,3 +1,8 @@
+@media (max-width:1920px) {
+    .mobileMenu{
+        display: none;
+    }
+}
 @media(max-width:828px) {
     nav{
         width: 564px;
@@ -5,7 +10,18 @@
 }
 @media(max-width:768px) {
     nav ul{
-        display: none;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgb(40,41,42);
+        top: 4rem;
+        right: 0;
+        border-radius: 1rem;
+        width: 8rem;
+        padding: 1rem;   
+    }
+    nav ul li{
+        margin: .5rem;
     }
     nav{
         height: 62px;
@@ -13,5 +29,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        
+    }
+    .mobileMenu{
+        display: flex;
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: .5rem;
+        border-radius: 50%;
+    }
+    .linkShowHide{
+        display: flex;
+        opacity: 0;
+        right: -20rem;
+        transition: all ease .4s 0s;
+    }
+    .linkShowHide.active{
+        display: flex;
+        opacity: 1;
+        right: 0;
     }
 }
