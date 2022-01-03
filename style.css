@@ -55,3 +55,18 @@ ul li a:hover{
     color: white;
     border-radius: 1.5rem;
 }
+.mobileMenu{
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    align-items: CENTER;
+    justify-content: space-between;
+}
+.mobileMenu span{
+    height: 5px;
+    width: 5px;
+    margin: 2px;
+    background-color: white;
+    border-radius: 50%;
+}
+/*wish to work properly*/
