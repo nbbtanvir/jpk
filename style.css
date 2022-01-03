@@ -61,6 +61,7 @@ ul li a:hover{
     /* background-color: white; */
     align-items: CENTER;
     justify-content: space-between;
+    transition:all ease .3s 0s;
 }
 .mobileMenu span{
     height: 5px;
@@ -68,5 +69,8 @@ ul li a:hover{
     margin: 2px;
     background-color: white;
     border-radius: 50%;
+}
+.mobileMenu:hover{
+background-color:rgb(32,33,34);
 }
 /*wish to work properly*/
