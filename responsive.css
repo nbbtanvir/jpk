@@ -34,7 +34,7 @@
     }
     nav ul li{
         margin: .5rem;
-        z-index: 2;
+        z-index: 4;
     }
     nav ul li a{
         color: rgb(105, 105, 105);
