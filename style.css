@@ -86,7 +86,7 @@ background-color:rgba(0, 0, 0,.1);
 /* it worked  */
 /* now i have to care abut contents */
 .container{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgb(243, 243, 243);
     width: 100%;
     display: flex;
